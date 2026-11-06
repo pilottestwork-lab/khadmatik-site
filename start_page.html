@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خدمات رقمية احترافية</title>
+<style>
+  :root{
+    --bg:#0b1020; --card:#121a33; --fg:#eef2ff; --muted:#9aa6c7;
+    --accent:#4f8cff; --accent2:#00d4a6; --border:#1f2a4d;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--fg); font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.7}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px}
+
+  /* Nav */
+  nav{display:flex; align-items:center; justify-content:space-between; padding:22px 0; border-bottom:1px solid var(--border)}
+  .logo{font-size:22px; font-weight:800}
+  .logo span{color:var(--accent2)}
+  .nav-links{display:flex; gap:26px; font-size:15px; color:var(--muted)}
+  .nav-links a:hover{color:var(--fg)}
+
+  /* Hero */
+  .hero{padding:80px 0; text-align:center}
+  .hero h1{font-size:44px; line-height:1.35; margin-bottom:18px}
+  .hero h1 span{color:var(--accent)}
+  .hero p{font-size:19px; color:var(--muted); max-width:720px; margin:0 auto 32px}
+  .btn{display:inline-block; background:var(--accent); color:#fff; padding:14px 34px; border-radius:12px; font-size:17px; font-weight:700; margin:6px}
+  .btn.ghost{background:transparent; border:2px solid var(--border); color:var(--fg)}
+  .btn:hover{transform:translateY(-2px)}
+
+  /* Sections */
+  section{padding:64px 0}
+  .sec-title{font-size:30px; margin-bottom:10px}
+  .sec-sub{color:var(--muted); margin-bottom:36px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:26px}
+  .card h3{font-size:19px; margin-bottom:10px; color:var(--accent2)}
+  .card p{color:var(--muted); font-size:15px}
+
+  /* Steps */
+  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px; counter-reset:step}
+  .step{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px}
+  .step::before{counter-increment:step; content:counter(step); display:inline-block; width:40px; height:40px; line-height:40px; text-align:center; border-radius:50%; background:var(--accent); font-weight:800; margin-bottom:14px}
+  .step h3{font-size:18px; margin-bottom:8px}
+  .step p{color:var(--muted); font-size:14px}
+
+  /* Testimonials */
+  .tgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px}
+  .tcard{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px}
+  .tcard p{color:var(--fg); font-size:15px; margin-bottom:14px}
+  .tcard .who{color:var(--muted); font-size:13px}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg,#12204a,#0b1020); border:1px solid var(--border); border-radius:20px; padding:48px; text-align:center}
+  .cta h2{font-size:28px; margin-bottom:14px}
+  .cta p{color:var(--muted); margin-bottom:26px}
+
+  footer{border-top:1px solid var(--border); padding:26px 0; text-align:center; color:var(--muted); font-size:14px}
+
+  @media(max-width:600px){
+    .hero h1{font-size:30px}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">خدمت<span>ك</span></div>
+      <div class="nav-links">
+        <a href="#services">خدماتنا</a>
+        <a href="#how">كيف نعمل</a>
+        <a href="#contact">تواصل</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>خدمات رقمية <span>احترافية</span> توصلك للنتيجة</h1>
+      <p>كتابة، ترجمة، تصميم، برمجة، تسويق — فريق يخدم معك بسرعة وجودة، وبسعر معقول.</p>
+      <a href="#contact" class="btn">اطلب الخدمة</a>
+      <a href="#services" class="btn ghost">شوف الخدمات</a>
+    </header>
+
+    <section id="services">
+      <h2 class="sec-title">خدماتنا</h2>
+      <p class="sec-sub">اختار اللي تحتاجه، ونبدأ فوراً.</p>
+      <div class="grid">
+        <div class="card"><h3>كتابة وتحرير</h3><p>مقالات، محتوى، نصوص إعلانية، تحرير احترافي.</p></div>
+        <div class="card"><h3>ترجمة</h3><p>عربي / إنجليزي / لغات أخرى — دقيقة وسريعة.</p></div>
+        <div class="card"><h3>تصميم</h3><p>شعارات، هوية، منشورات، واجهات.</p></div>
+        <div class="card"><h3>برمجة</h3><p>مواقع، تطبيقات، سكربتات، أتمتة.</p></div>
+        <div class="card"><h3>تسويق رقمي</h3><p>إعلانات، إدارة حسابات، SEO.</p></div>
+        <div class="card"><h3>استشارات</h3><p>خطة عمل، بناء دخل، تطوير مشروع.</p></div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2 class="sec-title">كيف نعمل</h2>
+      <p class="sec-sub">خطوات بسيطة، نتيجة واضحة.</p>
+      <div class="steps">
+        <div class="step"><h3>كلمنا</h3><p>ابعث لنا التفاصيل والهدف.</p></div>
+        <div class="step"><h3>خطة وعرض</h3><p>نعطيك خطة وسعر واضح.</p></div>
+        <div class="step"><h3>تنفيذ</h3><p>نخدم بسرعة وجودة.</p></div>
+        <div class="step"><h3>تسليم</h3><p>تستلم النتيجة وتقيّمنا.</p></div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2 class="sec-title">ماذا قالوا</h2>
+      <p class="sec-sub">آراء عملاء سابقين.</p>
+      <div class="tgrid">
+        <div class="tcard"><p>"شغل ممتاز وسرعة في التسليم. شكراً."</p><div class="who">— عميل</div></div>
+        <div class="tcard"><p>"تصميم احترافي وسعر معقول."</p><div class="who">— عميلة</div></div>
+        <div class="tcard"><p>"خدمة عملاء ممتازة وتواصل سريع."</p><div class="who">— عميل</div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="cta">
+        <h2>جاهز نبدأ؟</h2>
+        <p>كلّمنا الحين — نرد خلال ساعات.</p>
+        <a href="mailto:your.email@example.com" class="btn">راسلنا</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 خدمتك — جميع الحقوق محفوظة.</p>
+    </footer>
+  </div>
+</body>
+</html>
