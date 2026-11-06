@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة التجارة — خدمتك</title>
+<style>
+  :root{--bg:#0b1020;--card:#121a33;--fg:#eef2ff;--muted:#9aa6c7;--accent:#4f8cff;--accent2:#00d4a6;--border:#1f2a4d}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 24px}
+  h1{font-size:34px;margin-bottom:6px}
+  h1 span{color:var(--accent)}
+  .sub{color:var(--muted);margin-bottom:34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .item{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px;text-decoration:none;color:inherit;transition:.2s}
+  .item:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .item .ic{font-size:34px;margin-bottom:14px}
+  .item h3{font-size:18px;margin-bottom:8px;color:var(--accent2)}
+  .item p{color:var(--muted);font-size:14px}
+  .tag{display:inline-block;background:#1a2a5e;color:#cfe0ff;font-size:12px;padding:4px 12px;border-radius:20px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>لوحة <span>التجارة</span></h1>
+  <p class="sub">كل ملفات مشروعك في مكان واحد — اضغط على الملف لفتحه.</p>
+  <div class="grid">
+    <a class="item" href="start_page.html"><div class="ic">🌐</div><h3>صفحة الهبوط</h3><p>صفحة العرض الرئيسية لخدماتك.</p><span class="tag">HTML</span></a>
+    <a class="item" href="portfolio.html"><div class="ic">🖼️</div><h3>صفحة الأعمال</h3><p>معرض أعمالك وشيتك.</p><span class="tag">HTML</span></a>
+    <a class="item" href="client_tracker.html"><div class="ic">📋</div><h3>متابعة العملاء</h3><p>جدول تتبع العملاء والعقود.</p><span class="tag">HTML</span></a>
+    <a class="item" href="invoice.html"><div class="ic">🧾</div><h3>فاتورة</h3><p>نموذج فاتورة جاهز للطباعة.</p><span class="tag">HTML</span></a>
+    <a class="item" href="services.md"><div class="ic">📄</div><h3>كتالوج الخدمات</h3><p>الخدمات والأسعار.</p><span class="tag">Markdown</span></a>
+    <a class="item" href="proposal_template.md"><div class="ic">📝</div><h3>نموذج عرض سعر</h3><p>قالب عرض سعر احترافي.</p><span class="tag">Markdown</span></a>
+    <a class="item" href="contract_template.md"><div class="ic">📜</div><h3>نموذج عقد</h3><p>عقد خدمة مبسّط.</p><span class="tag">Markdown</span></a>
+    <a class="item" href="marketing_kit.md"><div class="ic">📣</div><h3>عدة التسويق</h3><p>رسائل ومنشورات جاهزة.</p><span class="tag">Markdown</span></a>
+    <a class="item" href="digital_product.md"><div class="ic">💡</div><h3>منتج رقمي</h3><p>خطة لبناء منتج قابل للبيع.</p><span class="tag">Markdown</span></a>
+    <a class="item" href="social_calendar.md"><div class="ic">📅</div><h3>تقويم النشر</h3><p>خطة 14 يوم للمحتوى.</p><span class="tag">Markdown</span></a>
+  </div>
+</div>
+</body>
+</html>
